@@ -31,7 +31,7 @@ The following list of software is installed on the Game Development Virtual Mach
 ## Game engines
 
 * [Unreal Engine 4.27](https://www.unrealengine.com/)
-* [Unreal Engine 5 Early Access](https://www.unrealengine.com/unreal-engine-5) Preview
+* [Unreal Engine 5 Preview 2](https://www.unrealengine.com/unreal-engine-5)
 
 ## IDEs
 
