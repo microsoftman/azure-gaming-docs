@@ -54,6 +54,8 @@ landingContent:
           url: integrate-perforce-depot.md   
         - text: Integrate with Incredibuild
           url: /gaming/azure/reference-architectures/incredibuild-scale-out-your-cloud-builds#setting-up-incredibuild     
+        - text: Integrate with Azure Virtual Desktop
+          url: integrate-azure-virtual-desktop.md
         - text: Enable Pixel Streaming
           url: enable-pixel-streaming.md
 
