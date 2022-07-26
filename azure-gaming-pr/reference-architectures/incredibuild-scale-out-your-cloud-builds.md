@@ -18,6 +18,8 @@ This document also assumes the reader has some fundamental knowledge of:
 - working in the Azure Portal, with the ability to create VMs and simple networking
 - working in Azure DevOps, with the ability to set up build agents (not to be confused with Incredibuild agents)
 
+[![Incredibuild build server scalling on Azure](media/cloud-build-pipeline/incredibuild-architecture.png)](media/cloud-build-pipeline/incredibuild-architecture.png)
+
 ## What is Incredibuild?
 
 Incredibuild is a suite of compilation acceleration software that takes advantage of idle compute resources within an organization to spread compute load. You can find out more about the company, its products and licensing at **[https://www.incredibuild.com/](https://www.incredibuild.com/)**
