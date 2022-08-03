@@ -44,12 +44,15 @@ In both ways, you might be prompted to sign in to your Azure account if you're n
 > If you choose Windows 10, you need confirm that you have an eligible license with [multi-tenant hosting rights](/azure/virtual-machines/windows/windows-desktop-multitenant-hosting-deployment), unless you want to use this VM for dev/test scenarios if you have an appropriate [Visual Studio (formerly MSDN) subscription](/azure/virtual-machines/windows/client-images).
 
 6. Click  **Next: Game Development Tools**.
-7. You will see **Select Game Engine**. Select your desired engine and version from the dropdown. A list of pre-installed common free game Development tools will show up.
+7. You will see **Select Game Engine**. Select your desired engine and version from the dropdown. A list of pre-installed common free game Development tools will show up. If you don't need install any game engine from the list, you can choose **No game engine installed** option.  
 
     - This VM supports [Unreal Pixel Streaming](https://docs.unrealengine.com/4.27/SharingAndReleasing/PixelStreaming/). You can check the box if you want to enable this feature, which opens the required ports.
     - This VM can be configured to pull down a repository from Perforce after deployment if you already have a Perforce Helix Core version control server in place. If desired, check the box Connect to and sync a Perforce depot to configure the Perforce depot to pull from. If you do not have a Perforce server setup, you can [spin one up from the Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/perforce.perforce-enhanced-studio-pack).
     - You can select which version of Microsoft Game Development Kit (GDK) to be included. The version selected for the GDK will be installed in the background once you first login. For Xbox console development, there will need to be additional [steps to enable this development](/gaming/gdk/_content/gc/tools-console/gc-tools-console-toc), as specified in the NDA developer program.
     - If you need use Incredibuild and already have the license, you can upload the license file here. This VM will automatically install and activate Incredibuild for you. Otherwise, Incredibuild will not be installed. 
+
+> [!NOTE]
+> A dedicated Azure data disk will be created and connected to the VM if you choose the game engine. This disk has a volume of 255GB with drive letter E and saves all the game engine files.
 
 8. Click Next: **Remote Access Configuration**.
 9. Choose RDP, Teradici or Parsec from the **Remote Access Technology** dropdown. If Teradici or Parsec is chosen, you need fill additional licensing information that is used to register the desired agent.  
