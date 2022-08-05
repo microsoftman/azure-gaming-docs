@@ -36,6 +36,8 @@
     href: use-azure-files-for-global-ddc.md
   - name: Integrate with a Perforce Depot
     href: integrate-perforce-depot.md
+  - name: Integrate with Azure Virtual Desktop
+    href: integrate-azure-virtual-desktop.md
   - name: Enable Pixel Streaming
     href: enable-pixel-streaming.md  
 - name: Reference
