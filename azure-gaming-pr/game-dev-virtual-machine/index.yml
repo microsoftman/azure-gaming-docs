@@ -66,7 +66,9 @@ landingContent:
         - text: Azure Game Development Solutions with Microsoft Partners
           url: game-development-partners.md
         - text: Known Issues
-          url: known-issues.md  
+          url: known-issues.md
+        - text: Release notes
+          url: release-notes.md  
   
   # Card
   - title: Resources
