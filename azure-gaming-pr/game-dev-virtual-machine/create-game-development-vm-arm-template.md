@@ -43,7 +43,7 @@ The following resources are defined in the template:
 
 ## Deploy the template with default parameters
 
-To use the template from the Azure CLI, login in and choose your subscription. Then run the scripts below. This is a basic deployment with default Game Dev VM parameters. It deploys a Windows 10 VM with Unreal Engine 5.0.1 installed which has RDP as the remote connection method.
+To use the template from the Azure CLI, login in and choose your subscription. Then run the scripts below. This is a basic deployment with default Game Dev VM parameters. It deploys a Windows 10 VM with Unreal Engine 5.0.1 installed which has RDP as the remote connection method. The VM size is <a href="/azure/virtual-machines/nvv3-series" target="_blank">Standard_Nv12s_v3</a>.
 
 ```azurecli-interactive
 read -p "Enter the name of the resource group to create:" resourceGroupName && 
@@ -55,7 +55,7 @@ osType=win10 &&
 engine=unreal && 
 version=5_0_1 && 
 templateUri="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/application-workloads/azure-gamedev/gamedev-vm/azuredeploy.json" && 
-az vm image terms accept --urn "microsoftcorporation1602274591143:game-dev-vm:$osType"_"$engine"_"$version:latest" && 
+az vm image terms accept --urn "microsoft-azure-gaming:game-dev-vm:$osType"_"$engine"_"$version:latest" && 
 az group create --name $resourceGroupName --location "$location" && 
 az deployment group create --resource-group $resourceGroupName --template-uri $templateUri --parameters administratorLogin=$adminName -p passwordAdministratorLogin=$adminPass -p osType=$osType -p gameEngine="ue_"$version && 
 echo "Press [ENTER] to continue ..." && 
@@ -76,7 +76,7 @@ read -p "Enter the OS type (e.g., win10 or ws2019):" osType &&
 engine=unreal && 
 read -p "Enter the Unreal Engine version (e.g., 4_27_2 or 5_0_1):" version && 
 templateUri="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/application-workloads/azure-gamedev/gamedev-vm/azuredeploy.json" && 
-az vm image terms accept --urn "microsoftcorporation1602274591143:game-dev-vm:$osType"_"$engine"_"$version:latest" && 
+az vm image terms accept --urn "microsoft-azure-gaming:game-dev-vm:$osType"_"$engine"_"$version:latest" && 
 az group create --name $resourceGroupName --location "$location" && 
 az deployment group create --resource-group $resourceGroupName --template-uri $templateUri --parameters administratorLogin=$adminName -p passwordAdministratorLogin=$adminPass -p osType=$osType -p gameEngine="ue_"$version && 
 echo "Press [ENTER] to continue ..." && 
@@ -120,4 +120,5 @@ echo "Press [ENTER] to continue ..."
 
 ## Next steps
 
-In this Quickstart, you created a Game Development Virtual Machine from an ARM template. Now you can [access this VM](/gaming/azure/game-dev-virtual-machine/create-game-development-vm-for-unreal#access-the-game-development-vm), [explore the tools](/gaming/azure/game-dev-virtual-machine/tools-included-azure-game-dev-kit), and start your game development journey on Azure.  
+In this Quickstart, you created a Game Development Virtual Machine from an ARM template. Now you can [access this VM](/gaming/azure/game-dev-virtual-machine/create-game-development-vm-for-unreal#access-the-game-development-vm), [explore the tools](/gaming/azure/game-dev-virtual-machine/tools-included-azure-game-dev-kit), and start your game development journey on Azure. 
+If you need create multiple Game Dev VMs for <a href="/overview#using-as-build-servers" target="_blank">build servers</a> or <a href="/overview#using-as-test-servers" target="_blank">test servers</a> purpose, please refer to this template: [Azure Game Development Virtual Machine Scale Set](https://github.com/Azure/azure-quickstart-templates/tree/master/application-workloads/azure-gamedev/gamedev-vmss)

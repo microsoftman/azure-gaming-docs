@@ -32,7 +32,7 @@ If you can’t find your desired VM SKUs when you attempt to create the VM, it c
 	
 :::image type="content" source="./media/troubleshoot-support/select-vm-size.png" alt-text="Screenshot showing the Azure Portal dashboard to select a VM size":::
 
-To check if your region supports the required SKUs, please go to [Azure Products by Region](https://azure.microsoft.com/global-infrastructure/services/?products=virtual-machines) and examine if **NCasT4v3-series**, **NV-series**, or **NVv3-series** is available. You can also [check resource usage against limits](/azure/networking/check-usage-against-limits) if you believe you need more quota. Select the location(s) you want to deploy the VM. And choose **Microsoft.Compute** as the Provider. Confirm that the VM sizes: **Standard NV Family vCPUs**, **Standard NVSv3 Family vCPUs**, and **Standard NCASv3_T4 Family vCPUs** are available since these are the sizes supported by the Game Development VM.
+To check if your region supports the required SKUs, please go to [Azure Products by Region](https://azure.microsoft.com/global-infrastructure/services/?products=virtual-machines) and examine if **NCasT4v3-series**, **NV-series**, **NVv3-series** or **NVadsA10 v5-series** is available. You can also [check resource usage against limits](/azure/networking/check-usage-against-limits) if you believe you need more quota. Select the location(s) you want to deploy the VM. And choose **Microsoft.Compute** as the Provider. Confirm that the VM sizes: **Standard NV Family vCPUs**, **Standard NVSv3 Family vCPUs**, **Standard NCASv3_T4 Family vCPUs** and **Standard NVADSA10v5 Family vCPUs** are available since these are the sizes supported by the Game Development VM.
 
 :::image type="content" source="./media/troubleshoot-support/request-increase.png" alt-text="Screenshot showing the available VM sizes and how to request quota increases":::
 
@@ -53,7 +53,7 @@ az vm list-skus --all --output table | grep "Locations\b\|---\|\([[:alnum:]]\+[[
 ```
 **Example 2:** Get the compute resource usage, which supports Game Dev VM for the West US region in your Azure subscription.
 ```azurecli-interactive
-az vm list-usage --location westus -o table | grep "Name\b\|---\|\(NV\|NVSv3\|NCASv3_T4\)\b" | (sed -u 2q; sort)
+az vm list-usage --location westus -o table | grep "Name\b\|---\|\(NV\|NVSv3\|NCASv3_T4\|A10v5\)\b" | (sed -u 2q; sort)
 ```
 
 ### Validation failure

@@ -34,7 +34,7 @@ At the **Workspace** step, select **Yes** to **Register a desktop app group**, t
 
 Ensure that you have a valid/active **Registration key**. There is no need to copy that key as it is automatically retrieved by the Game Development Virtual Machine provisioning.
 
-![Screenshot showing how to view registration key for host pool](./media/integrate-azure-virtual-desktop/registration-key.png)
+:::image type="content" source="media/integrate-azure-virtual-desktop/registration-key.png" alt-text="Screenshot showing how to view registration key for host pool" lightbox="media/integrate-azure-virtual-desktop/registration-key.png":::
 
 ## Configuring the Game Development Virtual Machine for AVD integration
 
@@ -42,11 +42,11 @@ Ensure that you have a valid/active **Registration key**. There is no need to co
 2. Select the **Add to AVD Host Pool** checkbox under Azure Virtual Desktop (AVD) integration
 3. Use the **AVD Host Pool** drop-down box to select the existing AVD Host Pool to add the VM to.
 
-![Screenshot showing to select existing Host Pool](./media/integrate-azure-virtual-desktop/avd-integration.png)
+:::image type="content" source="media/integrate-azure-virtual-desktop/avd-integration.png" alt-text="Screenshot showing to select existing Host Pool" lightbox="media/integrate-azure-virtual-desktop/avd-integration.png":::
 
 4. On the Management tab, select both **System assigned managed identity** and **Login with Azure AD**.
 
-![Screenshot showing options selected for managed identity and Azure AD](./media/integrate-azure-virtual-desktop/prerelease.png)
+:::image type="content" source="media/integrate-azure-virtual-desktop/management.png" alt-text="Screenshot showing options selected for managed identity and Azure AD" lightbox="media/integrate-azure-virtual-desktop/management.png":::
 
 5. After the VM is created, assign the AAD users that will be remoting into the VM (now an AVD session host) the Virtual Machine Administrator Login or Virtual Machine User Login role. This can be done via the CLI, or the portal. Note: Make sure to replace the parameters with their correct values when using the following CLI command.
 
