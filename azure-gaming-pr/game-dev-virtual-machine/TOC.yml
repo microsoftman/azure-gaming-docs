@@ -45,6 +45,8 @@
   items:
   - name: Game Development Partners
     href: game-development-partners.md
+  - name: Release notes
+    href: release-notes.md 
 - name: Resources
   expanded: false
   items:
