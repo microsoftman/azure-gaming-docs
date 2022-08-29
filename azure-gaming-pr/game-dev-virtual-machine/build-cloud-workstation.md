@@ -62,7 +62,7 @@ You can expect this pop-up window below after running the Sysprep command. After
 > [!NOTE]
 > Shortly after you lose the connection, the VM status on Azure portal will turn to Stopped. If not, please refresh the portal. You must wait the VM Status to be Stopped before moving into the next step. And please do NOT click the Stop button to manually change the VM status. Wait for the change to happen automatically.
 
-:::image type="content" source="./media/build-cloud-workstation/stoppped-status.png" alt-text="Screenshot showing the VM status turns to stopped":::
+:::image type="content" source="./media/build-cloud-workstation/stopped-status.png" alt-text="Screenshot showing the VM status turns to stopped":::
 
 Once you see VM in the **Stopped** status, you can run Azure PowerShell command Set-AzVM in the step 5 of this instruction [Generalize a VM before creating an image - Azure Virtual Machines](/azure/virtual-machines/generalize) to set the status of the virtual machine to **Generalized**. Now you’re ready to move to the next step.
 
