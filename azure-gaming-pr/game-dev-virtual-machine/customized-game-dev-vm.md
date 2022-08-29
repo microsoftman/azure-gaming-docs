@@ -35,7 +35,7 @@ There are two main methods of deploying a Game Dev VM:
 :::image type="content" source="./media/customized-game-dev-vm/sysprep-setting.png" alt-text="Screenshot showing how to enable the VM to be used with sysprep":::
 
 > [!NOTE]
-> When deploying via the Azure Portal, you must check this box . The VM will be used with sysprep to create a custom image** in the Advanced tab, as shown below. Otherwise, the following steps will fail.
+> When deploying via the Azure Portal, you must check this box . The VM will be used with sysprep to create a custom image in the Advanced tab. Otherwise, the following steps will fail.
 
 ## Step 2: Access the Game Dev VM and customize it
 
