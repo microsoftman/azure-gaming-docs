@@ -58,8 +58,8 @@ landingContent:
           url: integrate-azure-virtual-desktop.md   
         - text: Enable Pixel Streaming
           url: enable-pixel-streaming.md
-        - text: Build a cloud game development workstation
-          url: build-cloud-workstation.md   
+        - text: Build a customized Game Dev VM
+          url: customized-game-dev-vm.md   
 
   - title: Reference
     linkLists:

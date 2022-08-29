@@ -40,8 +40,8 @@
     href: integrate-azure-virtual-desktop.md
   - name: Enable Pixel Streaming
     href: enable-pixel-streaming.md
-  - name: Build a cloud game development workstation
-    href: build-cloud-workstation.md 
+  - name: Build a customized Game Dev VM
+    href: customized-game-dev-vm.md 
 - name: Reference
   expanded: false
   items:
