@@ -17,8 +17,7 @@ There are dozens of Azure Offers, listing with details on this website [Microsof
 | [**Azure Plan**](https://azure.microsoft.com/offers/ms-azr-0017g/) | 0017G | Yes |
 | [**Microsoft Azure EA Sponsorship**](https://azure.microsoft.com/offers/ms-azr-0136p/) | 0136P | Yes, except for [T4](/azure/virtual-machines/nct4-v3-series) |
 | [**Pay-As-You-Go**](https://azure.microsoft.com/offers/ms-azr-0003p/) | 0003P | Yes |
-| [**Visual Studio Enterprise (MPN) subscribers**](https://azure.microsoft.com/offers/ms-azr-0029p/
-) | 0029P | Yes, except for [T4](/azure/virtual-machines/nct4-v3-series) |
+| [**Visual Studio Enterprise (MPN) subscribers**](https://azure.microsoft.com/offers/ms-azr-0029p/) | 0029P | Yes, except for [T4](/azure/virtual-machines/nct4-v3-series) |
 | [**Pay-As-You-Go Dev/Test**](https://azure.microsoft.com/offers/ms-azr-0023p/) | 0023P | Yes |
 | [**Enterprise Dev/Test**](https://azure.microsoft.com/offers/ms-azr-0148p/) | 0148P | Yes |
 | [**Microsoft Azure Sponsored Offer**](https://azure.microsoft.com/offers/ms-azr-0036p/) | 0036P | Yes, except for [T4](/azure/virtual-machines/nct4-v3-series) |
