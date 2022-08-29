@@ -13,7 +13,7 @@ ms.prod: azure-gaming
 There are dozens of Azure Offers, listing with details on this website [Microsoft Azure Offer Details](https://azure.microsoft.com/support/legal/offer-details/). However, not every Azure Offer supports [GPU SKUs](/gaming/azure/game-dev-virtual-machine/choosing-gpu-sku) (NV-series, NVv3-series, NCasT4_v3-series and NVadsA10 v5-series) that are compatible with Game Dev VM. The list below shows what Azure Offers support GPU on Game Dev VM.
 
 | **OFFER NAME** | **OFFER NUMBER** | **Approved for GPUs** |
-|:---:|:---:|:---:|
+| -------------- | ---------------- | --------------------- |
 | [**Azure Plan**](https://azure.microsoft.com/offers/ms-azr-0017g/) | 0017G | Yes |
 | [**Microsoft Azure EA Sponsorship**](https://azure.microsoft.com/offers/ms-azr-0136p/) | 0136P | Yes, except for [T4](/azure/virtual-machines/nct4-v3-series) |
 | [**Pay-As-You-Go**](https://azure.microsoft.com/offers/ms-azr-0003p/) | 0003P | Yes |
