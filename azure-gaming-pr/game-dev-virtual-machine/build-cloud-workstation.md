@@ -23,7 +23,7 @@ The high-level flow for producing a customized image based on the Game Developme
 ## Prerequisites
 
 - An Azure account with an active subscription.
-- Understand what Sysprep is and its process: [Sysprep (System Preparation) Overview](/windows-hardware/manufacture/desktop/sysprep--system-preparation--overview?view=windows-11)
+- Understand what Sysprep is and its process: [Sysprep (System Preparation) Overview](/windows-hardware/manufacture/desktop/sysprep--system-preparation--overview)
 
 ## Step 1: Deploy a Game Dev VM into Azure
 
