@@ -10,7 +10,7 @@ ms.prod: azure-gaming
 
 # Build your unique cloud game development workstation by customizing Game Dev VM
 
-While the Game Development VM bundles many [common tools](/gaming/azure/game-dev-virtual-machine/tools-included-azure-game-dev-kit) used in game production, it’s  understandable that each game studio and individual game developer usually has their unique toolset as well. Users can use the Game Development VM as a starting point from which they build their customized cloud development workstation. That way, they don’t need to worry about the common tooling, and only focus on the delta that produces the desired outcome.
+While the Game Development VM bundles many [common tools](/gaming/azure/game-dev-virtual-machine/tools-included-azure-game-dev-kit) used in game production, it’s  understandable that each game studio and individual game developer usually has their unique toolset as well. The Game Development VM is a starting point from which users build their customized cloud development workstation. That way, they don’t need to worry about the common tooling, and only focus on the delta that produces the desired outcome.
 
 The high-level flow for producing a customized image based on the Game Development VM comprises of the following tasks:
 
@@ -32,7 +32,7 @@ There are two main methods of deploying a Game Dev VM that you can choose from:
 1. Using the Azure Marketplace/Portal UI as per the [tutorial on creating a Game Development Virtual Machine with Unreal Engine,](/gaming/azure/game-dev-virtual-machine/create-game-development-vm-for-unreal) or
 1. Leverage ARM and CLI to deploy from the [Azure Quickstart Templates library](/gaming/azure/game-dev-virtual-machine/create-game-development-vm-arm-template).
 
-**Note:** When deploying via Azure Portal, you must check the box **VM will be used with sysprep to create a custom image** in the Advanced tab, as shown below. Otherwise, the following steps will fail.
+**Note:** When deploying via the Azure Portal, you must check the box **VM will be used with sysprep to create a custom image** in the Advanced tab, as shown below. Otherwise, the following steps will fail.
 
 :::image type="content" source="./media/build-cloud-workstation/sysprep-setting.png" alt-text="Screenshot showing how to enable the VM to be used with sysprep":::
 
@@ -42,13 +42,11 @@ Here you can do whatever you need to build your own standard image. For example,
 
 - Install and set up the software you or your team need to use, which are not included in the [list of tools](/gaming/azure/game-dev-virtual-machine/tools-included-azure-game-dev-kit) Game Dev VM already provides.
 - Uninstall the software which you don’t need to free more space on the disk.
-- Further configure the operating system to the desired state you need. Update registry or group policy.
+- Configure the operating system to the desired state you need. Update registry or group policy.
 
 ## Step 3: Generalize Game Dev VM by using Sysprep
 
-After the customization of your own Game Dev VM is finished, you can follow the instructions in this link to Sysprep the Game Dev VM:
-
-[Generalize a VM before creating an image - Azure Virtual Machines ](/azure/virtual-machines/generalize)
+After the customization of your own Game Dev VM is finished, you can follow the instructions to Sysprep the Game Dev VM: [Generalize a VM before creating an image](/azure/virtual-machines/generalize).
 
 Sysprep removes user specific information so your customized Game Dev VM image can be used as a template to create multiple VMs in the future.
 
@@ -64,7 +62,7 @@ You can expect this pop-up window below after running the Sysprep command. After
 
 :::image type="content" source="./media/build-cloud-workstation/stopped-status.png" alt-text="Screenshot showing the VM status turns to stopped":::
 
-Once you see VM in the **Stopped** status, you can run Azure PowerShell command Set-AzVM in the step 5 of this instruction [Generalize a VM before creating an image - Azure Virtual Machines](/azure/virtual-machines/generalize) to set the status of the virtual machine to **Generalized**. Now you’re ready to move to the next step.
+Once you see VM in the **Stopped** status, you can run the Azure PowerShell command _Set-AzVM_ in step 5 of how-to [generalize a VM before creating an image](/azure/virtual-machines/generalize) to set the status of the virtual machine to **Generalized**. Now you’re ready to move to the next step.
 
 ## Step 4: Capture the customized Game Dev VM image
 
@@ -80,7 +78,7 @@ After all the required information is filled out and validation passes, you can 
 
 Now you have successfully captured the image and exported it to your Azure Compute Gallery, it’s time to start to use this image as a template to build one of your own game development cloud workstations.
 
-Follow the steps documented in the [Create a VM from your gallery](/azure/virtual-machines/vm-generalized-image-version?tabs=portal%2Ccli2) link, and you’ll be good to go. You can also use scripting like CLI or PowerShell to reference your customized image and automate the VM deployment process if you have multiple VMs to spin up at the same time.  
+Follow the steps documented in the article to [create a VM from your gallery](/azure/virtual-machines/vm-generalized-image-version?tabs=portal%2Ccli2), and you’ll be good to go. You can also use scripting like CLI or PowerShell to reference your customized image and automate the VM deployment process if you have multiple VMs to spin up at the same time.  
 
 ## Next steps
 
