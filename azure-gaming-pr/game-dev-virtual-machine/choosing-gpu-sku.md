@@ -25,7 +25,7 @@ Currently the most performant GPU SKUs in Azure for a game development workstati
 If you decide to upgrade your current VM to a more powerful SKU, the VM can be re-sized after the initial creation (e.g., NV12s_v3 to NV24s_v3). Learn more about how to [change the size of a virtual machine](/azure/virtual-machines/resize-vm?tabs=portal).
 
 > [!NOTE]
-> Azure Game Dev VM started to support a more powerful GPU SKU [NVadsA10 v5-series](/azure/virtual-machines/nva10v5-series) since July, 2022. It is powered by [NVIDIA A10](https://www.nvidia.com/en-us/data-center/products/a10-gpu/) GPU, which has better performance than T4. For more details about this VM size, please refer to the [generally available blog post](https://azure.microsoft.com/en-us/blog/choose-the-right-size-for-your-workload-with-nvads-a10-v5-virtual-machines-now-generally-available/).
+> Azure Game Dev VM started to support a more powerful GPU SKU [NVadsA10 v5-series](/azure/virtual-machines/nva10v5-series) since July, 2022. It is powered by [NVIDIA A10](https://www.nvidia.com/en-us/data-center/products/a10-gpu/) GPU, which has better performance than T4. For more details about this VM size, please refer to the [generally available blog post](https://azure.microsoft.com/blog/choose-the-right-size-for-your-workload-with-nvads-a10-v5-virtual-machines-now-generally-available/).
 
 ## Capabilities
 
