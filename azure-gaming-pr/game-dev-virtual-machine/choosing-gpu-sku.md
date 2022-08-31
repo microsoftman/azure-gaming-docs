@@ -37,7 +37,7 @@ There are some regions that do not have the VM SKUs currently supported by the G
 
 ## Pricing
 
-Though your decision to choose a particular GPU SKU might be more around capability and performance versus price, it’s good to review the differences in pricing between the different GPU SKU families, especially as you increase in core count within that family. To review the pricing differences, please refer to the [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator/).  If your requirements would allow for using Azure Spot Virtual Machines, major discounts can be had, and this feature is available with our NCasT4_v3 and NVv3 series VMs.  
+Though your decision to choose a particular GPU SKU might be more around capability and performance versus price, it’s good to review the differences in pricing between the different GPU SKU families, especially as you increase in core count within that family. To review the pricing differences, please refer to the [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator/).  If your requirements would allow for using Azure Spot Virtual Machines, major discounts can be had. Some VM sizes in certain regions have up to 90% discount. Please check [Azure Spot Virtual Machines pricing](https://azure.microsoft.com/pricing/spot-advisor/) page for region availability and discount rates.  
 
 ## Ensure you have GPU quota
 
