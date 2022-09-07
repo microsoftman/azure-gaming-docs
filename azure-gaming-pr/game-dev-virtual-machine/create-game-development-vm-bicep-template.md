@@ -50,8 +50,15 @@ outputs adminPass string = adminPass
     # [CLI](#tab/CLI)
 
     ```azurecli
-    az group create --name exampleRG --location eastus
-    az deployment group create --resource-group exampleRG --template-file main.bicep --parameters adminName=<admin-user> vmName=<vm-name>
+    az group create \
+      --name exampleRG \
+      --location eastus
+    az deployment group create \
+      --resource-group exampleRG \
+      --template-file main.bicep \
+      --parameters adminName=<admin-user> \
+      vmName=<vm-name>
+
     ```
 
     # [PowerShell](#tab/PowerShell)
@@ -83,7 +90,8 @@ or [Azure PowerShell](./azure/azure-resource-manager/management/manage-resource-
 # [CLI](#tab/CLI)
 
 ```azurecli-interactive
-az resource list --resource-group exampleRG
+az resource list \
+  --resource-group exampleRG
 ```
 
 # [PowerShell](#tab/PowerShell)
@@ -112,7 +120,8 @@ For more information about how Azure Resource Manager orders the deletion of res
 # [CLI](#tab/CLI)
 
 ```azurecli-interactive
-az group delete --name exampleRG
+az group delete \
+  --name exampleRG
 ```
 
 # [PowerShell](#tab/PowerShell)
