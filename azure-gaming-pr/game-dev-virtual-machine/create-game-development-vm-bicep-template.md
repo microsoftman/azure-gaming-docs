@@ -77,15 +77,9 @@ outputs adminPass string = adminPass
 
 ## Review deployed resources
 
-Use the [Azure Portal](/azure/azure-resource-manager/management/manage-resource-groups-portal#open-resource-groups),
+Use the
 [Azure CLI](/azure-resource-manager/management/manage-resource-groups-cli#list-resource-groups),
 or [Azure PowerShell](/azure/azure-resource-manager/management/manage-resource-groups-powershell#list-resource-groups) to list the deployed resources in the resource group.
-
-# [Portal](#tab/Portal)
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **Resource groups**.
-3. Select the resource group you want to open.
-
 
 # [CLI](#tab/CLI)
 
@@ -105,17 +99,8 @@ Get-AzResource -ResourceGroupName exampleRG
 ## Clean up resources
 
 When no longer needed, use the
-[Azure Portal](/azure/azure-resource-manager/management/manage-resource-groups-portal#delete-resource-groups),
 [Azure CLI](/azure/azure-resource-manager/management/manage-resource-groups-cli#delete-resource-groups),
 or [Azure PowerShell](/azure/azure-resource-manager/management/manage-resource-groups-powershell#delete-resource-groups) to delete the resource group and its resources.
-
-# [Portal](#tab/Portal)
-1. Open the resource group you want to delete.  See [Open resource groups](/azure/azure-resource-manager/management/manage-resource-groups-powershell#open-resource-groups).
-2. Select **Delete resource group**.
-
-    ![delete azure resource group](/media/manage-resource-groups-portal/delete-group.png)
-
-For more information about how Azure Resource Manager orders the deletion of resources, see [Azure Resource Manager resource group deletion](/azure/azure-resource-manager/management/delete-resource-group.md).
 
 # [CLI](#tab/CLI)
 
