@@ -31,7 +31,7 @@ module win10 'br/public:azure-gaming/game-dev-vm:1.0.1' = {
   params: {
     location  : resourceGroup().location
     vmName    : 'bicep'
-    adminName : 'hordeadmin'
+    adminName : 'gdvmadmin'
     adminPass : adminPass
     osType    : 'win10'
     gameEngine: 'ue_4_27_2'
