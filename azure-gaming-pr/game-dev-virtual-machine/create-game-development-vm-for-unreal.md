@@ -3,7 +3,7 @@ title: Quickstart - Create a Game Development Virtual Machine with Unreal Engine
 description: Get up and running with a Windows 10 or Server 2019 Game Development Virtual Machine that has Unreal Engine and other common game development tools pre-installed.
 author: meaghanlewis
 ms.topic: quickstart
-ms.date: 02/01/2022
+ms.date: 09/07/2022
 ms.author: mosagie
 ms.prod: azure-gaming
 ---
@@ -92,7 +92,7 @@ After the VM is created and provisioned, there are three methods to access this 
 1. Follow the steps listed to [connect and sign on to Azure-based virtual machine](/azure/virtual-machines/windows/connect-logon). Use the credentials that you configured when created this virtual machine before. If you enable AAD for this VM, you can also use your corporate credentials for RDP access [if you meet the requirements](/azure/active-directory/devices/howto-vm-sign-in-azure-ad-windows#requirements).  
 2. Once you sign on to the VM, you'll be prompted immediately to accept Epic Games store End User License Agreement (EULA). If your Epic Games account has already accepted the latest EULA agreement, there is no need to accept it again, and you will be redirected to the desktop after your Epic Games account is authenticated. This is a one-time step when first deploying a new game development VM, and you don’t need repeat this step when you access this VM again.
 
-:::image type="content" source="./media/create-game-development-vm-for-unreal/sign-eula-agreement-new.png" alt-text="Screenshot of prompt to sign the EULA agreement for Epic Games":::
+:::image type="content" source="./media/create-game-development-vm-for-unreal/sign-eula-agreement.png" alt-text="Screenshot of prompt to sign the EULA agreement for Epic Games":::
 
 > [!NOTE]
 > Your VM may stay at the Windows welcome screen for up to 1 minute until you see the above EULA Agreement--this is normal.  
