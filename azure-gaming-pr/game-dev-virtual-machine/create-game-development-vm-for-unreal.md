@@ -16,15 +16,15 @@ Get up and running with a Windows 10 or Windows Server 2019 Game Development Vir
 
 - An Azure account with an active subscription. [Create an account for free](https://azure.com/free). Please note Azure free accounts do not support GPU enabled virtual machine SKUs.
 - An [Epic Games account](https://www.epicgames.com/id/login) to accept Epic Games store End User License Agreement after signing in to this VM.
-- If you need deploy this VM with Windows 10 as the operating system, Multitenant Hosting Rights for Windows 10 is required. Verify you have an [eligible Windows 10 subscription license](/azure/virtual-machines/windows/windows-desktop-multitenant-hosting-deployment#subscription-licenses-that-qualify-for-multitenant-hosting-rights) or a [Visual Studio subscription](/azure/virtual-machines/windows/client-images) for dev/test scenarios.
+- If you need deploy this VM with Windows 10 as the operating system, Multi-tenant Hosting Rights for Windows 10 is required. Verify you have an [eligible Windows 10 subscription license](/azure/virtual-machines/windows/windows-desktop-multitenant-hosting-deployment#subscription-licenses-that-qualify-for-multitenant-hosting-rights) or a [Visual Studio subscription](/azure/virtual-machines/windows/client-images) for dev/test scenarios.
 If you choose to access the VM with either Teradici or Parsec, you need to have your own license keys to use during deployment.  
 
 ## Create your Game Development Virtual Machine
 
 To create a Game Dev VM instance:
 
-1. Go to the [Azure portal](https://portal.azure.com/). Or, go to the [Azure Game Development VM](https://aka.ms/gamedevvm) marketplace page, click "Get It Now" under the Azure icon, then click "Continue" in the pop up window to give consent. 
-In both ways, you might be prompted to sign in to your Azure account if you're not already signed in. If you do the latter, you can skip step 2 and jump to step 3. 
+1. Go to the [Azure portal](https://portal.azure.com/). Or, go to the [Azure Game Development VM](https://aka.ms/gamedevvm) marketplace page, click "Get It Now" under the Azure icon, then click "Continue" in the pop up window to give consent.
+In both ways, you might be prompted to sign in to your Azure account if you're not already signed in. If you do the latter, you can skip step 2 and jump to step 3.
 2. Find the virtual machine listing by typing in **game development** and selecting **Azure Game Development Virtual Machine**.
 3. Select the  **Create**  button.
 4. You should be redirected to the **create Azure Game Development Virtual Machine** blade.
@@ -116,7 +116,7 @@ When no longer needed, you can delete the resource group, virtual machine, and a
 
 ## Next steps
 
-- Explore the tools on the Game Dev VM by opening the  **Start**  menu.
+- Explore the tools on the Game Dev VM by opening the **Start** menu.
 - Start to learn and use [Unreal Engine](https://www.unrealengine.com/learn).
 - Learn about game development on Azure by reading [Azure for Gaming](/gaming/azure/) and trying out tutorials.
 - Read more about the [Game Development Virtual Machine](./overview.md).
