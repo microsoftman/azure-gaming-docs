@@ -45,7 +45,7 @@ outputs adminPass string = adminPass
 ## Deploy the Bicep file
 
 1. Save the Bicep file as **main.bicep** to your local computer.
-1. Deploy the Bicep file using either [Azure CLI](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-cli) or [Azure PowerShell](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-powershell).
+1. Deploy the Bicep file using either [Azure CLI](./azure/azure-resource-manager/bicep/deploy-cli) or [Azure PowerShell](./azure/azure-resource-manager/bicep/deploy-powershell).
 
     # [CLI](#tab/CLI)
 
@@ -70,9 +70,9 @@ outputs adminPass string = adminPass
 
 ## Review deployed resources
 
-Use the [Azure Portal](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal#open-resource-groups),
-[Azure CLI](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli#list-resource-groups),
-or [Azure PowerShell](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-powershell#list-resource-groups) to list the deployed resources in the resource group.
+Use the [Azure Portal](./azure/azure-resource-manager/management/manage-resource-groups-portal#open-resource-groups),
+[Azure CLI](./azure-resource-manager/management/manage-resource-groups-cli#list-resource-groups),
+or [Azure PowerShell](./azure/azure-resource-manager/management/manage-resource-groups-powershell#list-resource-groups) to list the deployed resources in the resource group.
 
 # [Portal](#tab/Portal)
 1. Sign in to the [Azure portal](https://portal.azure.com).
@@ -97,9 +97,9 @@ Get-AzResource -ResourceGroupName exampleRG
 ## Clean up resources
 
 When no longer needed, use the
-[Azure Portal](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal#delete-resource-groups),
-[Azure CLI](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-cli#delete-resource-groups),
-or [Azure PowerShell](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-powershell#delete-resource-groups) to delete the resource group and its resources.
+[Azure Portal](./azure/azure-resource-manager/management/manage-resource-groups-portal#delete-resource-groups),
+[Azure CLI](./azure/azure-resource-manager/management/manage-resource-groups-cli#delete-resource-groups),
+or [Azure PowerShell](./azure/azure-resource-manager/management/manage-resource-groups-powershell#delete-resource-groups) to delete the resource group and its resources.
 
 # [Portal](#tab/Portal)
 1. Open the resource group you want to delete.  See [Open resource groups](#open-resource-groups).
