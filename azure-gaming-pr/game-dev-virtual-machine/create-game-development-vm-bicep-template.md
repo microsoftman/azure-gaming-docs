@@ -102,12 +102,12 @@ When no longer needed, use the
 or [Azure PowerShell](./azure/azure-resource-manager/management/manage-resource-groups-powershell#delete-resource-groups) to delete the resource group and its resources.
 
 # [Portal](#tab/Portal)
-1. Open the resource group you want to delete.  See [Open resource groups](#open-resource-groups).
+1. Open the resource group you want to delete.  See [Open resource groups](./azure/azure-resource-manager/management/manage-resource-groups-powershell#open-resource-groups).
 2. Select **Delete resource group**.
 
     ![delete azure resource group](./media/manage-resource-groups-portal/delete-group.png)
 
-For more information about how Azure Resource Manager orders the deletion of resources, see [Azure Resource Manager resource group deletion](delete-resource-group.md).
+For more information about how Azure Resource Manager orders the deletion of resources, see [Azure Resource Manager resource group deletion](./azure/azure-resource-manager/management/delete-resource-group.md).
 
 # [CLI](#tab/CLI)
 
