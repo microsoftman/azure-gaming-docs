@@ -118,8 +118,8 @@ Remove-AzResourceGroup -Name exampleRG
 ---
 
 ## See also
-- [Integrate with Azure Active Directory](./integrate-vm-with-aad)
-- [Use Azure Files with Unreal Engine](./use-azure-files-for-global-ddc)
-- [Integrate with a Perforce depot](./integrate-perforce-depot)
-- [Integrate with Azure Virtual Desktop (AVD)](./integrate-azure-virtual-desktop)
-- [Enabling Unreal Pixel Streaming](./enable-pixel-streaming)
+- [Deploy Bicep files from Visual Studio Code](/azure/azure-resource-manager/bicep/deploy-vscode)
+- [Configure your Bicep environment](/azure/azure-resource-manager/bicep/bicep-config)
+- [Use Bicep linter](/azure/azure-resource-manager/bicep/linter)
+- [Use functions in Bicep](/azure/azure-resource-manager/bicep/bicep-functions)
+- [Use modules in Bicep](/azure/azure-resource-manager/bicep/modules)
