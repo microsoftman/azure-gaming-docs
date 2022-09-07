@@ -1,5 +1,5 @@
 ---
-title: Quickstart - Create a Game Development Virtual Machine with Unreal Engine
+title: Create a Game Development Virtual Machine with Unreal Engine
 description: Get up and running with a Windows 10 or Server 2019 Game Development Virtual Machine that has Unreal Engine and other common game development tools pre-installed.
 author: meaghanlewis
 ms.topic: quickstart
