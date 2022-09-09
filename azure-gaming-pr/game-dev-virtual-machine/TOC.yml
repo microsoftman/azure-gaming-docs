@@ -39,7 +39,9 @@
   - name: Integrate with Azure Virtual Desktop
     href: integrate-azure-virtual-desktop.md
   - name: Enable Pixel Streaming
-    href: enable-pixel-streaming.md  
+    href: enable-pixel-streaming.md
+  - name: Build a customized Game Dev VM
+    href: customized-game-dev-vm.md 
 - name: Reference
   expanded: false
   items:
@@ -53,4 +55,6 @@
   - name: Troubleshooting
     href: troubleshoot-support.md
   - name: Known Issues and FAQ
-    href: known-issues.md               
+    href: known-issues.md
+  - name: Offer Types
+    href: offer-types.md  

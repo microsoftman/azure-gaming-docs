@@ -1,9 +1,9 @@
 ---
-title: Quickstart - Create a Game Development Virtual Machine with Unreal Engine
+title: Create a Game Development Virtual Machine with Unreal Engine
 description: Get up and running with a Windows 10 or Server 2019 Game Development Virtual Machine that has Unreal Engine and other common game development tools pre-installed.
 author: meaghanlewis
 ms.topic: quickstart
-ms.date: 02/01/2022
+ms.date: 09/07/2022
 ms.author: mosagie
 ms.prod: azure-gaming
 ---
@@ -16,15 +16,15 @@ Get up and running with a Windows 10 or Windows Server 2019 Game Development Vir
 
 - An Azure account with an active subscription. [Create an account for free](https://azure.com/free). Please note Azure free accounts do not support GPU enabled virtual machine SKUs.
 - An [Epic Games account](https://www.epicgames.com/id/login) to accept Epic Games store End User License Agreement after signing in to this VM.
-- If you need deploy this VM with Windows 10 as the operating system, Multitenant Hosting Rights for Windows 10 is required. Verify you have an [eligible Windows 10 subscription license](/azure/virtual-machines/windows/windows-desktop-multitenant-hosting-deployment#subscription-licenses-that-qualify-for-multitenant-hosting-rights) or a [Visual Studio subscription](/azure/virtual-machines/windows/client-images) for dev/test scenarios.
+- If you need deploy this VM with Windows 10 as the operating system, Multi-tenant Hosting Rights for Windows 10 is required. Verify you have an [eligible Windows 10 subscription license](/azure/virtual-machines/windows/windows-desktop-multitenant-hosting-deployment#subscription-licenses-that-qualify-for-multitenant-hosting-rights) or a [Visual Studio subscription](/azure/virtual-machines/windows/client-images) for dev/test scenarios.
 If you choose to access the VM with either Teradici or Parsec, you need to have your own license keys to use during deployment.  
 
 ## Create your Game Development Virtual Machine
 
 To create a Game Dev VM instance:
 
-1. Go to the [Azure portal](https://portal.azure.com/). Or, go to the [Azure Game Development VM](https://aka.ms/gamedevvm) marketplace page, click "Get It Now" under the Azure icon, then click "Continue" in the pop up window to give consent. 
-In both ways, you might be prompted to sign in to your Azure account if you're not already signed in. If you do the latter, you can skip step 2 and jump to step 3. 
+1. Go to the [Azure portal](https://portal.azure.com/). Or, go to the [Azure Game Development VM](https://aka.ms/gamedevvm) marketplace page, click "Get It Now" under the Azure icon, then click "Continue" in the pop up window to give consent.
+In both ways, you might be prompted to sign in to your Azure account if you're not already signed in. If you do the latter, you can skip step 2 and jump to step 3.
 2. Find the virtual machine listing by typing in **game development** and selecting **Azure Game Development Virtual Machine**.
 3. Select the  **Create**  button.
 4. You should be redirected to the **create Azure Game Development Virtual Machine** blade.
@@ -34,7 +34,7 @@ In both ways, you might be prompted to sign in to your Azure account if you're n
     - **Resource group** : Create a new group or use an existing one.
     - **Region** : Select the datacenter that's most appropriate. For fastest network access, it's the datacenter that has most of your existing workloads or is the closest to your physical location. Learn more about [Azure Regions](https://azure.microsoft.com/global-infrastructure/regions/).
     - **Use as a build server** : This is optional. If you do not expect to use 3D applications or work with 3D content on this VM, instead you want to use it for game build purpose, as illustrated in <a href="./overview.md#using-as-build-servers" target="_blank">this build servers example</a>, you can check this box. It gives you more VM size options since GPU is not required.
-    - **VM Size** : This VM currently supports the sizes of [NV](/azure/virtual-machines/nv-series), [NVv3](/azure/virtual-machines/nvv3-series), and [T4](/azure/virtual-machines/nct4-v3-series), if you are not using it as a build server. Choose a size that is appropriate for your workloads. Read more about [Windows VM sizes in Azure](/azure/virtual-machines/sizes).
+    - **VM Size** : This VM currently supports the sizes of [NV](/azure/virtual-machines/nv-series), [NVv3](/azure/virtual-machines/nvv3-series), [T4](/azure/virtual-machines/nct4-v3-series), and [A10](/azure/virtual-machines/nva10v5-series) if you are not using it as a build server. Choose a size that is appropriate for your workloads. Read more about [Windows VM sizes in Azure](/azure/virtual-machines/sizes).
     - **Virtual machine name** : Enter the name of the virtual machine. This is how it will appear in your Azure portal.
     - **Admin username** : Enter the administrator username. This is the username you will use to log into your virtual machine, and need not be the same as your Azure username.
     - **Password** : Enter the password you will use to log into your virtual machine. Repeat the same password And **Confirm password** in the next field.
@@ -47,7 +47,7 @@ In both ways, you might be prompted to sign in to your Azure account if you're n
 7. You will see **Select Game Engine**. Select your desired engine and version from the dropdown. A list of pre-installed common free game Development tools will show up. If you don't need install any game engine from the list, you can choose **No game engine installed** option.  
 
     - This VM supports [Unreal Pixel Streaming](https://docs.unrealengine.com/4.27/SharingAndReleasing/PixelStreaming/). You can check the box if you want to enable this feature, which opens the required ports.
-    - This VM can be configured to pull down a repository from Perforce after deployment if you already have a Perforce Helix Core version control server in place. If desired, check the box Connect to and sync a Perforce depot to configure the Perforce depot to pull from. If you do not have a Perforce server setup, you can [spin one up from the Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/perforce.perforce-enhanced-studio-pack).
+    - This VM can be configured to pull down a repository from Perforce after deployment if you already have a Perforce Helix Core version control server in place. If desired, check the box **Connect to and sync a Perforce depot** to configure the Perforce depot to pull from. If you do not have a Perforce server setup and want to know more, please refer to documentation <a href="./integrate-perforce-depot.md" target="_blank">Integrate with a Perforce depot</a>.
     - You can select which version of Microsoft Game Development Kit (GDK) to be included. The version selected for the GDK will be installed in the background once you first login. For Xbox console development, there will need to be additional [steps to enable this development](/gaming/gdk/_content/gc/tools-console/gc-tools-console-toc), as specified in the NDA developer program.
     - If you need use Incredibuild and already have the license, you can upload the license file here. This VM will automatically install and activate Incredibuild for you. Otherwise, Incredibuild will not be installed. 
 
@@ -55,7 +55,8 @@ In both ways, you might be prompted to sign in to your Azure account if you're n
 > A dedicated Azure data disk will be created and connected to the VM if you choose the game engine. This disk has a volume of 255GB with drive letter E and saves all the game engine files.
 
 8. Click Next: **Remote Access Configuration**.
-9. Choose RDP, Teradici or Parsec from the **Remote Access Technology** dropdown. If Teradici or Parsec is chosen, you need fill additional licensing information that is used to register the desired agent.  
+9. Choose RDP, Teradici or Parsec from the **Remote Access Technology** dropdown. If Teradici or Parsec is chosen, you need fill additional licensing information that is used to register the desired agent. 
+   From here, you can also choose whether to have Azure Virtual Desktop (AVD) integration. By default, the box is unchecked. For more details, please refer to documentation <a href="./integrate-azure-virtual-desktop.md" target="_blank">Integrate with Azure Virtual Desktop (AVD)</a>
 10. Click **Next: VM Network**. Under **Configure Public IP and DNS** , and **Configure virtual networks,** you can create new resources, or pick the existing resources, depending on your business needs. **Note:** If you select “None” for the Public IP Address, a private IP address will be assigned to this VM. That private IP address is the next available IP address in the subnet you configure for this VM.
 11. Click **Next: Data Storage**.
 
@@ -115,7 +116,7 @@ When no longer needed, you can delete the resource group, virtual machine, and a
 
 ## Next steps
 
-- Explore the tools on the Game Dev VM by opening the  **Start**  menu.
+- Explore the tools on the Game Dev VM by opening the **Start** menu.
 - Start to learn and use [Unreal Engine](https://www.unrealengine.com/learn).
 - Learn about game development on Azure by reading [Azure for Gaming](/gaming/azure/) and trying out tutorials.
 - Read more about the [Game Development Virtual Machine](./overview.md).

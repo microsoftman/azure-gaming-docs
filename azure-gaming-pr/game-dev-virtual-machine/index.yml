@@ -58,6 +58,8 @@ landingContent:
           url: integrate-azure-virtual-desktop.md   
         - text: Enable Pixel Streaming
           url: enable-pixel-streaming.md
+        - text: Build a customized Game Dev VM
+          url: customized-game-dev-vm.md   
 
   - title: Reference
     linkLists:
@@ -80,7 +82,9 @@ landingContent:
         - text: Azure Cloud Build Pipelines
           url: /gaming/azure/reference-architectures/azurecloudbuilds-0-intro/
         - text: Troubleshooting
-          url: troubleshoot-support.md  
+          url: troubleshoot-support.md
+        - text: Offer Types
+          url: offer-types.md   
 
 
 
