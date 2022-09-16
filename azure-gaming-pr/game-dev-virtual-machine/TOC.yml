@@ -43,7 +43,9 @@
   - name: Enable Pixel Streaming
     href: enable-pixel-streaming.md
   - name: Build a customized Game Dev VM
-    href: customized-game-dev-vm.md 
+    href: customized-game-dev-vm.md
+  - name: Azure Devops Build Pipelines     
+    href: ../reference-architectures/azurecloudbuilds-0-intro.md
 - name: Reference
   expanded: false
   items:
