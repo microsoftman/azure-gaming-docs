@@ -16,6 +16,8 @@
     href: create-game-development-vm-for-unreal.md
   - name: Create a Virtual Machine with an ARM template
     href: create-game-development-vm-arm-template.md
+  - name: Create a Virtual Machine with a Bicep template
+    href: create-game-development-vm-bicep-template.md    
   - name: Remoting with Parsec 
     href: remote-to-vm-with-parsec.md
   - name: Remoting with Teradici 
@@ -41,7 +43,9 @@
   - name: Enable Pixel Streaming
     href: enable-pixel-streaming.md
   - name: Build a customized Game Dev VM
-    href: customized-game-dev-vm.md 
+    href: customized-game-dev-vm.md
+  - name: Azure Devops Build Pipelines     
+    href: ../reference-architectures/azurecloudbuilds-0-intro.md
 - name: Reference
   expanded: false
   items:
